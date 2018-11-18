@@ -1,17 +1,16 @@
 //{ autofold
 package com.mskf;
 
-import com.mskf.utils.Printer;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/**
- * Created by mskf on 2018/11/18.
- */
 @SuppressWarnings(value={"rawtypes","unchecked"})
 public class ListFunc {
-    //if you want to change inputs, for example, you can use "ArrayList<Integer> list = sampleList(3,4,5,6,7)" to get a new list.
+
     public static int[] samplePrimitiveArray(Integer...integers){
         if(integers.length==0)
             return new int[]{3,1,5,4,1,-2};
@@ -33,25 +32,10 @@ public class ListFunc {
         return Arrays.stream(samplePrimitiveArray(integers)).boxed().collect(Collectors.toCollection(ArrayList::new));
     }
 
-    public static void main(String[] args) throws Exception{
-        Integer[] res = Arrays.stream( new int[]{3,1,5,4}).boxed().toArray(Integer[]::new);
-
-        Integer num[] = new Integer[]{3,1,5,4};
-        ArrayList<Integer> list = new ArrayList(Arrays.asList(3,1,5,4));
-//        Printer.print(list.stream().skip(1).limit(3-1).collect(Collectors.toList()));
-//        new ArrayList<Integer>(num);
-        List newList = list.stream()
-                .sorted()
-                .collect(Collectors.toList());
-
-        ArrayList<Integer> anotherlist = new ArrayList<>(Arrays.asList(1,-3,-5,-4));
-        Printer.print(Stream.concat(list.stream(),anotherlist.stream()).collect(Collectors.toList()));
-        Printer.print(list);
-    }
-
-
     public static List<Integer> createFromArray(int[] array){
 //}
+
+    //if you want to change inputs, for example, you can use "ArrayList<Integer> list = sampleList(3,4,5,6,7)" to get a new list.
         return Arrays.stream(array)
                 .boxed().collect(Collectors.toList());
         // You can get an ArrayList by: Arrays.stream(array).boxed().collect(Collectors.toCollection(ArrayList::new));
