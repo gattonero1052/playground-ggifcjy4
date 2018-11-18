@@ -1,7 +1,7 @@
+//{ autofold
 package com.mskf;
 
 import com.mskf.utils.Printer;
-
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -9,6 +9,7 @@ import java.util.stream.Stream;
 /**
  * Created by mskf on 2018/11/18.
  */
+@SuppressWarnings(value={"rawtypes","unchecked"})
 public class ListFunc {
     //if you want to change inputs, for example, you can use "ArrayList<Integer> list = sampleList(3,4,5,6,7)" to get a new list.
     public static int[] samplePrimitiveArray(Integer...integers){
@@ -50,10 +51,13 @@ public class ListFunc {
 
 
     public static List<Integer> createFromArray(int[] array){
+//}
         return Arrays.stream(array)
                 .boxed().collect(Collectors.toList());
         // You can get an ArrayList by: Arrays.stream(array).boxed().collect(Collectors.toCollection(ArrayList::new));
+//{ autofold
     }
+//}
 
     public static List<Integer> createFromBoxedArray(Integer...integers){
         return new ArrayList<>(Arrays.asList(integers));
