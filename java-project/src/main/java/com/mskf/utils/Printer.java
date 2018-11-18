@@ -69,6 +69,9 @@ public class Printer {
     }
 
     //print collection
+    public static String print(ArrayList objs, boolean getResult){
+        return print(objs,getResult,0);
+    }
     public static String print(List objs, boolean getResult){
         return print(objs,getResult,0);
     }
