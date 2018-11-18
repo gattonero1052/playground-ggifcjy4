@@ -5,7 +5,7 @@ import org.junit.Test;
 
 public class ListTest {
     @Test
-    public void test(){
+    public void testt(){
         int num[] = new int[]{3,1,5,4};
         TestUtils.msg("Running ListFunc.create({3,1,5,4})...", Printer.print(ListFunc.create(num),false));
     }

@@ -7,6 +7,7 @@ import java.util.List;
  * Created by mskf on 2018/11/18.
  */
 public class ListFunc {
+    @SuppressWarnings("rawtypes")
     public static List<Integer> create(int[] array){
         return Arrays.asList(1,2,3);
     }
