@@ -8,6 +8,7 @@ import java.util.List;
  */
 public class ListPrograms {
     public static List create(int[] array){
+        System.out.println(12345);
         return Arrays.asList(array);
     }
 }
