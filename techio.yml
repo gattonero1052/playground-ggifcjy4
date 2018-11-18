@@ -2,8 +2,6 @@ title : Java Maven Project
 
 # Table of content
 plan:
-  - title: Welcome # Set the page title (only displayed if your contribution has several pages)
-    statement: markdowns/welcome.md # Set the file path to the page content
   - title: List # Set the page title (only displayed if your contribution has several pages)
     statement: markdowns/list.md # Set the file path to the page content
 #  - title: Another Page
