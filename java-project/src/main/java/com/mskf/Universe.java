@@ -1,7 +1,5 @@
 // { autofold
-package com.yourself;
-
-import java.util.Arrays;
+package com.mskf;
 
 public class Universe {
 // }

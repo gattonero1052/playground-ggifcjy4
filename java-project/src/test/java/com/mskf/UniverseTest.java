@@ -1,11 +1,11 @@
-package com.yourself;
+package com.mskf;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-
-import org.junit.Assert;
-import org.junit.Test;
 
 public class UniverseTest {
 
@@ -16,7 +16,7 @@ public class UniverseTest {
 			Assert.assertEquals("Running Universe.countAllStars(9, -3)...", 6, Universe.countAllStars(9, -3));
 			success(true);
 
-			if (existsInFile("Arrays.stream(galaxies).sum()", new File("./src/main/java/com/yourself/Universe.java"))) {
+			if (existsInFile("Arrays.stream(galaxies).sum()", new File("./src/main/java/com/mskf/Universe.java"))) {
 				msg("My personal Yoda, you are. 🙏", "* ● ¸ .　¸. :° ☾ ° 　¸. ● ¸ .　　¸.　:. • ");
 				msg("My personal Yoda, you are. 🙏", "           　★ °  ☆ ¸. ¸ 　★　 :.　 .   ");
 				msg("My personal Yoda, you are. 🙏", "__.-._     ° . .　　　　.　☾ ° 　. *   ¸ .");

@@ -1,0 +1,10 @@
+# compile result
+target/
+out/
+
+# settings
+.settings
+.project
+.classpath
+.idea/
+*.iml
