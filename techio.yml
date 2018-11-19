@@ -2,8 +2,6 @@ title : Simple Code
 plan:
   - title: List - Java
     statement: markdowns/list.md
-  - title: List - Python
-    statement: markdowns/python/list.md
 projects:
   java:
     root: /java-project
