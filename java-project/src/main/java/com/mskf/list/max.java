@@ -7,10 +7,7 @@ import java.util.List;
 public class max {
     public static Integer max(List<Integer> list){
 //}
-        // stream way:
-        // list.stream().max(Comparator.naturalOrder()).get();
         return Collections.max(list);
-        // Collections.min works similarly
 //{ autofold
     }
 }

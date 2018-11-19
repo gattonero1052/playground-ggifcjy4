@@ -13,6 +13,7 @@ public class ListTest {
     public void createFromArray(){
         TestUtils.msg("Create List From Array...",
                 Printer.print(create.createFromArray(samplePrimitiveArray()),false));
+        TestUtils.hint("You can get an ArrayList by: Arrays.stream(array).boxed().collect(Collectors.toCollection(ArrayList::new))");
     }
 
     @Test
@@ -26,6 +27,7 @@ public class ListTest {
     public void slice(){
         TestUtils.msg("Slice List From 1 to 3...",
                 Printer.print(slice.slice(sampleList(),1,3),false));
+        TestUtils.hint("Stream way: list.stream().skip(from).limit(to-from).collect(Collectors.toList());");
     }
 
     @Test
@@ -44,6 +46,7 @@ public class ListTest {
     public void max(){
         TestUtils.msg("Get max value from list...",
                 Printer.print(max.max(sampleList()),false));
+        TestUtils.hint("Stream way: list.stream().max(Comparator.naturalOrder()).get();");
     }
 
     @Test
@@ -62,17 +65,26 @@ public class ListTest {
     public void sortArray(){
         TestUtils.msg("Sort Array...",
                 Printer.print(sort.sortArray(samplePrimitiveArray()),false));
+
+        TestUtils.hint("Arrays.sort is an in-place function");
     }
 
     @Test
     public void sortList(){
         TestUtils.msg("Sort List...",
                 Printer.print(sort.sortList(sampleList()),false));
+        TestUtils.hint("in-place: Collections.sort(newList)");
     }
 
     @Test
     public void concatList(){
         TestUtils.msg("Concat List...",
                 Printer.print(concat.concatList(sampleList(),sampleList()),false));
+        TestUtils.hint("in-place: listA.addAll(listB)");
+    }
+
+    @Test
+    public void terminal(){
+        TestUtils.terminal();
     }
 }

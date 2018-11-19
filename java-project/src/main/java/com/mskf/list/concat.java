@@ -9,9 +9,6 @@ import java.util.stream.Stream;
 public class concat {
     public static List<Integer> concatList(List<Integer> listA, List<Integer> listB){
 //}
-        //in-place: listA.addAll(listB);
-
-        //not in-place
         return Stream.concat(listA.stream(),listB.stream()).collect(Collectors.toList());
 //{ autofold
     }

@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 public class create {
 //}
     public static List<Integer> createFromArray(int[] array){
-        //if you want to change inputs, for example, you can use "ArrayList<Integer> list = sampleList(3,4,5,6,7)" to get a new list.
+        //
         return Arrays.stream(array)
                 .boxed().collect(Collectors.toList());
         // You can get an ArrayList by: Arrays.stream(array).boxed().collect(Collectors.toCollection(ArrayList::new));

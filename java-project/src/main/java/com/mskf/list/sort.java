@@ -12,16 +12,11 @@ public class sort {
         int[] newArray = Arrays.copyOf(array,array.length);
         Arrays.sort(newArray);
         return newArray;
-        // the in-place algo is much simpler
     }
 
     public static List<Integer> sortList(List<Integer> list){
         List<Integer> newList = new ArrayList(list);
 
-        //in-place
-        //Collections.sort(newList);
-
-        //not in-place
         return newList.stream()
                 .sorted()
                 .collect(Collectors.toList());
