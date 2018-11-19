@@ -8,8 +8,3 @@ projects:
   java:
     root: /java-project
     runner: techio/java-maven3-junit4-runner:1.1.3-java-8
-  python:
-    root: /java-project
-    runner:
-      name: python
-      version: '3'
