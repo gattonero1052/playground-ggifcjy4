@@ -21,6 +21,8 @@ public class ListTest {
 
         TestUtils.msg("Create List From Boxed Array...",
                 Printer.print(create.createFromBoxedArray(sampleBoxedArray()),false));
+
+        TestUtils.hint("Arrays.asList creates a list which you can not modify because its type is an inner type: java.util.Arrays$ArrayList");
     }
 
     @Test
