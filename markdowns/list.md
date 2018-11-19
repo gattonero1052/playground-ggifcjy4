@@ -1,24 +1,24 @@
 # List
 ## Create
-@[Create List From Array]({"stubs": ["src/main/java/com/mskf/ListFunc.java"], "command": "com.mskf.ListTest#createFromArray"})
+@[Create List]({"stubs": ["src/main/java/com/mskf/list/create.java"], "command": "com.mskf.ListTest#createFromArray"})
 
-@[Create List From Array]({"stubs": ["src/main/java/com/mskf/ListFunc.java"], "command": "com.mskf.ListTest#createFromBoxedArray"})
+@[Create List]({"stubs": ["src/main/java/com/mskf/list/create.java"], "command": "com.mskf.ListTest#createFromBoxedArray"})
 
-@[Create List From Array]({"stubs": ["src/main/java/com/mskf/ListFunc.java"], "command": "com.mskf.ListTest#slice"})
+@[Slice List]({"stubs": ["src/main/java/com/mskf/list/slice.java"], "command": "com.mskf.ListTest#slice"})
 
-@[Create List From Array]({"stubs": ["src/main/java/com/mskf/ListFunc.java"], "command": "com.mskf.ListTest#sliceToEnd"})
+@[Slice List]({"stubs": ["src/main/java/com/mskf/list/slice.java"], "command": "com.mskf.ListTest#sliceToEnd"})
 
-@[Create List From Array]({"stubs": ["src/main/java/com/mskf/ListFunc.java"], "command": "com.mskf.ListTest#sliceFromStart"})
+@[Slice List]({"stubs": ["src/main/java/com/mskf/list/slice.java"], "command": "com.mskf.ListTest#sliceFromStart"})
 
-@[Create List From Array]({"stubs": ["src/main/java/com/mskf/ListFunc.java"], "command": "com.mskf.ListTest#max"})
+@[Find Max Value In List]({"stubs": ["src/main/java/com/mskf/list/max.java"], "command": "com.mskf.ListTest#max"})
 
-@[Create List From Array]({"stubs": ["src/main/java/com/mskf/ListFunc.java"], "command": "com.mskf.ListTest#distinctList"})
+@[Get Distinct List]({"stubs": ["src/main/java/com/mskf/list/distinct.java"], "command": "com.mskf.ListTest#distinctList"})
 
-@[Create List From Array]({"stubs": ["src/main/java/com/mskf/ListFunc.java"], "command": "com.mskf.ListTest#filterList"})
+@[Filter List]({"stubs": ["src/main/java/com/mskf/list/filter.java"], "command": "com.mskf.ListTest#filterList"})
 
-@[Create List From Array]({"stubs": ["src/main/java/com/mskf/ListFunc.java"], "command": "com.mskf.ListTest#sortArray"})
+@[Sort List]({"stubs": ["src/main/java/com/mskf/list/sort.java"], "command": "com.mskf.ListTest#sortArray"})
 
-@[Create List From Array]({"stubs": ["src/main/java/com/mskf/ListFunc.java"], "command": "com.mskf.ListTest#sortList"})
+@[Sort List]({"stubs": ["src/main/java/com/mskf/list/sort.java"], "command": "com.mskf.ListTest#sortList"})
 
-@[Create List From Array]({"stubs": ["src/main/java/com/mskf/ListFunc.java"], "command": "com.mskf.ListTest#concatList"})
+@[Concat List]({"stubs": ["src/main/java/com/mskf/list/concat.java"], "command": "com.mskf.ListTest#concatList"})
 
