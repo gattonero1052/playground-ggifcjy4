@@ -1,19 +1,15 @@
-title : Java Maven Project
-
-# Table of content
+title : Simple Code
 plan:
-  - title: List # Set the page title (only displayed if your contribution has several pages)
-    statement: markdowns/list.md # Set the file path to the page content
-#  - title: Another Page
-#    statement: markdowns/another-page.md
-
-
-# Settings for your programming projects and the associated Docker images
+  - title: List - Java
+    statement: markdowns/list.md
+  - title: List - Python
+    statement: markdowns/python/list.md
 projects:
   java:
-    root: /java-project # Set the root path to your Java project
-
-    # Set the docker image. This image runs JUnit tests using this syntax:
-    # @[Code Editor Title]({"stubs": ["EditorFile1.java", "EditorFile2.java", ...], "command": "MyJUnitClass#myMethod"})
-    # More details here: https://github.com/TechDotIO/java-maven3-junit4-runner
+    root: /java-project
     runner: techio/java-maven3-junit4-runner:1.1.3-java-8
+  python:
+    root: /java-project
+    runner:
+      name: python
+      version: '3'
