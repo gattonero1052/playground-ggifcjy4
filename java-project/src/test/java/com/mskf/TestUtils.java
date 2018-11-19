@@ -7,6 +7,9 @@ public class TestUtils {
     public static void hint(String msg) {
         msg("Hint \uD83D\uDCA1",msg);
     }
+    public static void result(String msg) {
+        msg("Result:",msg);
+    }
 
     public static void msg(String channel, String msg) {
         System.out.println(String.format("TECHIO> message --channel \"%s\" \"%s\"", channel, msg));

@@ -24,4 +24,5 @@ if you want to change inputs, for example, you can use "ArrayList<Integer> list 
 @[Sort List]({"stubs": ["src/main/java/com/mskf/list/sortList.java"], "command": "com.mskf.ListTest#sortList"})
 
 @[Concat List]({"stubs": ["src/main/java/com/mskf/list/concat.java"], "command": "com.mskf.ListTest#concatList"})
+@[Ternimal Test]({"stubs": ["src/main/java/com/mskf/list/concat.java"], "command": "com.mskf.ListTest#terminal"})
 
