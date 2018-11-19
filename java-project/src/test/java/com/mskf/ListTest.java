@@ -12,7 +12,7 @@ public class ListTest {
     @Test
     public void createFromArray(){
         TestUtils.msg("Create List From Array...",
-                Printer.print(create.createFromArray(samplePrimitiveArray()),false));
+                Printer.print(createFromArray.createFromArray(samplePrimitiveArray()),false));
         TestUtils.hint("You can get an ArrayList by: Arrays.stream(array).boxed().collect(Collectors.toCollection(ArrayList::new))");
     }
 
@@ -20,7 +20,7 @@ public class ListTest {
     public void createFromBoxedArray(){
 
         TestUtils.msg("Create List From Boxed Array...",
-                Printer.print(create.createFromBoxedArray(sampleBoxedArray()),false));
+                Printer.print(createFromBoxedArray.createFromBoxedArray(sampleBoxedArray()),false));
 
         TestUtils.hint("Arrays.asList creates a list which you can not modify because its type is an inner type: java.util.Arrays$ArrayList");
     }
@@ -35,13 +35,13 @@ public class ListTest {
     @Test
     public void sliceToEnd(){
         TestUtils.msg("Slice List From 1 to End...",
-                Printer.print(slice.sliceToEnd(sampleList(),1),false));
+                Printer.print(sliceToEnd.sliceToEnd(sampleList(),1),false));
     }
 
     @Test
     public void sliceFromStart(){
         TestUtils.msg("Slice List From Start to 3...",
-                Printer.print(slice.sliceFromStart(sampleList(),3),false));
+                Printer.print(sliceFromStart.sliceFromStart(sampleList(),3),false));
     }
 
     @Test
@@ -66,7 +66,7 @@ public class ListTest {
     @Test
     public void sortArray(){
         TestUtils.msg("Sort Array...",
-                Printer.print(sort.sortArray(samplePrimitiveArray()),false));
+                Printer.print(sortArray.sortArray(samplePrimitiveArray()),false));
 
         TestUtils.hint("Arrays.sort is an in-place function");
     }
@@ -74,8 +74,8 @@ public class ListTest {
     @Test
     public void sortList(){
         TestUtils.msg("Sort List...",
-                Printer.print(sort.sortList(sampleList()),false));
-        TestUtils.hint("in-place: Collections.sort(newList)");
+                Printer.print(sortList.sortList(sampleList()),false));
+        TestUtils.hint("in-place: Collections.sort(list)");
     }
 
     @Test
