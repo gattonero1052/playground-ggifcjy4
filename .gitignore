@@ -7,4 +7,5 @@ out/
 .project
 .classpath
 .idea/
+.vscode/
 *.iml

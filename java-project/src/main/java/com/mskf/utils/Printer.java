@@ -95,9 +95,13 @@ public class Printer {
     }
 
     //方便切换是否打印输出
-    public static void print(Object obj) throws Exception{
-        Method method = Printer.class.getMethod("print",new Class[]{obj.getClass(),boolean.class});
-        method.invoke(null,obj,true);
+    public static void print(Object obj){
+        try{
+            Method method = Printer.class.getMethod("print",new Class[]{obj.getClass(),boolean.class});
+            method.invoke(null,obj,true);
+        }catch (Exception e){
+            System.out.println("Type not match");
+        }
     }
 
     public static void main(String[] args){

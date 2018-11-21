@@ -1,7 +1,9 @@
 # List
 Using Sample List: 3,1,5,4,1,-2
 if you want to change inputs, for example, you can use 
-```ArrayList<Integer> list = Arrays.stream(new int[]{1,2,3,4,5}).boxed().collect(Collectors.toCollection(ArrayList::new))```
+```java
+ArrayList<Integer> list = Arrays.stream(new int[]{1,2,3,4,5}).boxed().collect(Collectors.toCollection(ArrayList::new))
+```
 to get a new list of 1,2,3,4,5
 
 
